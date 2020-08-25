@@ -126,4 +126,4 @@ service nfs start
 
 
 # 自动部署教程
-解压文件 执行 bash install.sh /<path1>/<path2> 根据需求给出共享目录
+解压文件 执行 bash install.sh /path1/path2 根据需求给出共享目录
