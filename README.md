@@ -119,6 +119,6 @@ service nfs start
 ```
 
 3.在另一台 Linux 上挂载目录
-查看配置，showmoun -e 192.168.0.130
+查看配置，showmount -e 192.168.0.130
 
 \#新建目录 mkdir -p /share #挂载共享目录 mount 192.168.0.130:/data/share  /share #如果要卸载目录 umount  /share
