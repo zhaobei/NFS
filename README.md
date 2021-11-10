@@ -31,6 +31,39 @@ yum install -y nfs-utils rpcbind
 yum install -y nfs-utils
 ```
 
+
+
+# 在线部署 NFS (ubuntu版本)
+
+1、安装
+
+```shell
+# 安装nfs-kernel-server时，apt会自动安装nfs-common和portmap
+sudo apt-get install nfs-kernel-server
+分开看就是
+1.服务器端：sudo apt-get install portmap
+2.服务器端：sudo apt-get install nfs-kernel-server
+3.客户端：sudo apt-get install nfs-common
+
+```
+
+
+
+```shell
+# 共享文件同上centos系统操作
+```
+
+
+
+```shell
+# 重启服务
+sudo /etc/init.d/portmap restart <---重启portmap，
+sudo /etc/init.d/nfs-kernel-server restart <---重启nfs服务
+
+```
+
+
+
 但是，很多时候由于安全的原因不能联网，所以只能离线安装。
 下载离线安装包,
 
